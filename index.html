@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wallify – Dynamic Moodboard Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Wallify</h1>
+    <p>Your personalized, dynamic wallpaper moodboard</p>
+    <div id="filter-bar">
+      <!-- JS will dynamically inject tag filter buttons here -->
+    </div>
+    <div class="actions">
+      <button id="shuffle-btn" class="action-btn">🎲 Mood Shuffle</button>
+      <button id="favorites-btn" class="action-btn">❤️ Favorites</button>
+      <button id="reset-btn" class="action-btn">🔄 Reset</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery">
+      <!-- JS will dynamically inject image cards here -->
+    </section>
+  </main>
+
+  <!-- Modal Popup for clicked wallpaper -->
+  <div id="modal" class="hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button id="close-modal" aria-label="Close popup">&times;</button>
+      <img id="modal-img" src="" alt="Popup wallpaper" />
+      <div id="modal-details">
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+        <div id="modal-tags"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Created with ❤️ by [Your Name] — <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
